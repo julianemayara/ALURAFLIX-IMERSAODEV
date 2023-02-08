@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    align-items: center;
+    background-image: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-04-aluraflix-e-filmes.png");
+    background-size: cover;
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#form {
+    top: 50%;
+    left: 50%;
+    padding: 40px 60px;
+
+    width: min-content;
+    border-radius: 10px;
+    align-items: center;
+    position: fixed;
+ 
+    transform: translate(-50%, -50%);
+    background-color: #000000;
+    border-bottom: 10px solid;
+    border-color: #81c587;
+}
+
+
+h2 {
+    margin-bottom: 10%;
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+label {
+    color: #ffffff;
+}
+
+.input {
+    color: #ffffff;
+    min-width: 280px;
+    border-radius: 22px;
+    border: 2px solid;
+    padding: 5px;
+    margin: 0px 0px 12px -5px;
+}
+
+.input input {
+    width: 80%;
+    color: #81c587;
+    text-align: center;
+    border: none; 
+    outline: none;
+    background-color: #3f3e3e00;
+    transform: translateY(-10%);
+}
+
+.input ::placeholder {
+    color: #312f2fd0;
+}
+
+p {
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #80ce86b6;
+}
+
+.btn {
+    margin: 10% 20%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column-reverse;
+
+}
+
+.btn button {
+    text-align: center;
+    background-color: #ffffff;
+    color: #000000;
+    
+    font-family: 'Poppins', sans-serif;
+    padding: 3% 10%;
+
+    border-radius: 20px;
+    border: 0px solid;
+    cursor: pointer;
+}
+
+.btn button a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.btn button a:hover {
+    color: #80ce87;
+}
+
+
+
+
+/* CAMPO DA MEDIAQUERY */
+@media (max-width: 1024px) and (min-width:320px) {
+    #form {
+        padding: 2% 6%;
+        display: flex;
+      }
+      
+}

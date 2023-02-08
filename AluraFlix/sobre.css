@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    align-items: center;
+    background-image: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-04-aluraflix-e-filmes.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    top: 50%;
+    left: 50%;
+    width: 25%;
+    height: 80%;
+
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background-color: #000000;
+    border-bottom: 10px solid;
+    border-color: #81c587;
+}
+
+.perfil img {
+    margin-top: 30%;
+    align-items: center;
+    justify-content: center;
+}
+
+.perfil p {
+    margin: 2%;
+    text-align: center;
+    align-items: center;
+}
+
+.info {
+    margin: 0%;
+    text-align: justify;
+}
+
+p {
+    margin: 0% 20%;
+    text-align: justify;
+    color: #ffffff;
+}
+
+
+
+
+.btn {
+    margin-right: 80%;
+    display: flex;
+}
+
+.btn button {
+    background-color: #ffffff;
+    color: #000000;
+    
+    font-family: 'Poppins', sans-serif;
+    padding: 3% 40%;
+
+    border-radius: 20px;
+    border: 0px solid;
+    cursor: pointer;
+}
+
+.btn button a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.btn button a:hover {
+    color: #80ce87;
+}
+
+
+
+
+/* CAMPO DA MEDIAQUERY */
+@media (max-width: 1024px) and (min-width:320px) {
+
+    body > .container {
+        margin: auto;
+        width: 55%; 
+        height: 60%;
+        display: flex;
+
+        position: fixed;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .perfil img {
+        padding-top: 20%;
+        margin: auto;
+        width: 45%;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .perfil p {
+        margin: 4% 30%;
+        text-align: justify;
+        align-items: center;
+        font-size: 1rem;
+    }
+
+      .info p {
+        margin: auto;
+        width: 50%; 
+        font-size: 0.8em;
+        text-align: justify;
+        align-items: center;
+      }
+
+      .btn {
+        float: left;
+        margin-right: 70%;
+      }
+}
